@@ -5,7 +5,7 @@
 ------
 ### Probleemstelling
 ------
-Het grootste probleem is dat er onvoldoende robotwagens zijn voor het eerste jaar, hierdoor moeten er extra bijgemaakt worden. De nieuwe robotwagens zijn anders, meer SMD-componenten, andere driver en extra communicatiemanieren.
+
 
 ### Mindmap
 ------
