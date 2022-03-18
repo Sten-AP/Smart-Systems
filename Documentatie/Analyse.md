@@ -1,6 +1,8 @@
 # Hardware analyse
 #### Sten Hulsbergen
-#### 2ITIOT--
+#### 2ITIOT
+
+--
 
 ### Probleemstelling
 ------
