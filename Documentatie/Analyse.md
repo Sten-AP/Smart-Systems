@@ -31,8 +31,6 @@
 #### Argumentatie en alternatieven tabel
 
 
---
-
 ### Software analyse
 ------
 #### Data In -en Outputs
@@ -52,7 +50,6 @@
 #### Mockup (Indien GUI)
 
 
---
 
 ### Release plan
 ------
