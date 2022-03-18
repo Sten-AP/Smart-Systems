@@ -3,18 +3,13 @@
 #### Sten Hulsbergen
 #### 2ITIOT
 ------
---
-
 ### Probleemstelling
 ------
-
-
---
+Het grootste probleem is dat er onvoldoende robotwagens zijn voor het eerste jaar, hierdoor moeten er extra bijgemaakt worden. De nieuwe robotwagens zijn anders, meer SMD-componenten, andere driver en extra communicatiemanieren.
 
 ### Mindmap
 ------
 ![Mind map](https://user-images.githubusercontent.com/94611203/158987616-bdd657eb-4a7b-45aa-b957-adb5875e1223.png)
---
 
 ### Hardware analyse
 ------
@@ -24,9 +19,9 @@
 #### Specificatie tabel
 | Blok | Specificatie | Min | Nominaal |
 |:----:|:------------:|:---:|:--------:|
-| a    |              |     |          |
-| b    |              |     |          |
-| LDL1117     |              |     |          |
+|     |              |     |          |
+|     |              |     |          |
+| LDL1117 |          |     |          |
 
 #### Argumentatie en alternatieven tabel
 
