@@ -5,7 +5,7 @@ Sten Hulsbergen<br/>
 ## Probleemstelling
 
 Het grootste probleem wat er is, is dat er een volledig nieuwe wagen ontworpen moet worden. 
-Deze moet twee UART connectoren bevatten, drie I2C connectoren, de regelaar 7805 vervangen door een LDL1117, polariteitsbeveiliging voorzien, motordriver aanpassen naar een SMD-type en een OLED-scherm met I2C sturing. 
+Deze moet twee UART connectoren bevatten, drie I2C connectoren, de regelaar 7805 vervangen door een LDL1117 van 3.3V en 5V, polariteitsbeveiliging voorzien, motordriver aanpassen naar een SMD-type en een OLED-scherm met I2C sturing. 
 Naast de sturing moeten een aantal sensoren voorzien worden, een linetracker, IR- of ultrasone afstandssensoren,... Ook zullen er verkeerssignalisaties ontwikkeld moeten worden zoals verkeerslichten, slagbomen,... 
 Als laatste moet de wagen manueel als ook automatisch bestuurd kunnen worden.
 
@@ -15,13 +15,12 @@ Als laatste moet de wagen manueel als ook automatisch bestuurd kunnen worden.
 
 ## Hardware analyse
 ### Hardware blokdiagram
-
+![](Blokdiagram.svg)
 
 ### Specificatie tabel
-| Blok | Specificatie | Min | Nominaal |
-|:----:|:------------:|:---:|:--------:|
-|     |              |     |          |
-|     |              |     |          |
+| Blok | Specificatie | Min | Nominaal | Max |
+|:------:|:-----------------:|:-----:|:--------------:|:------:|
+| LA6583MC-AH |              |     |          |
 | LDL1117 |          |     |          |
 
 ### Argumentatie en alternatieven tabel
@@ -31,9 +30,9 @@ Als laatste moet de wagen manueel als ook automatisch bestuurd kunnen worden.
 ### Data In -en Outputs
 | Blok | Data In | Data Out |
 |:----:|:-------:|:--------:|
-|      |         |          |
-|      |         |          |
-|      |         |          |
+|   a   |         |          |
+|   b   |         |          |
+|   c   |         |          |
 
 ### State diagram
 
