@@ -1,9 +1,6 @@
 # Hardware analyse
---
-Sten Hulsbergen
---
-2ITIOT *separate paragraph*
---
+Sten Hulsbergen<br/>
+2ITIOT
 ### Probleemstelling
 ------
 Het grootste probleem wat er is, is dat er een volledig nieuwe wagen ontworpen moet worden. 
