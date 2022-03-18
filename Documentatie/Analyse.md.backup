@@ -19,9 +19,12 @@ Als laatste moet de wagen manueel als ook automatisch bestuurd kunnen worden.
 
 ### Specificatie tabel
 | Blok | Specificatie | Min | Nominaal | Max |
-|:----:|:------------:|:---:|:--------:| |
+|:------:|:-----------------:|:-----:|:--------------:|:------:|
+| Batterij | Stroom |   | 500mA | 2A |
+|   | Capaciteit |   | 2700mAh |   |
 | LA6583MC-AH |              |     |          |
-| LDL1117 |          |     |          |
+| LDL1117 | Spanning |1.2V |   | 5V |
+|                | Stroom |   | 1.2A |   |
 
 ### Argumentatie en alternatieven tabel
 
@@ -30,9 +33,9 @@ Als laatste moet de wagen manueel als ook automatisch bestuurd kunnen worden.
 ### Data In -en Outputs
 | Blok | Data In | Data Out |
 |:----:|:-------:|:--------:|
-|   a   |         |          |
-|   b   |         |          |
-|   c   |         |          |
+| IR-sensor |         |          |
+| Linetracker |         |          |
+| Ultrasoonsensor |         |          |
 
 ### State diagram
 
