@@ -17,7 +17,11 @@
 
 
 #### Specificatie tabel
-
+| Blok | Specificatie | Min | Nominaal |
+|:----:|:------------:|:---:|:--------:|
+| a    |              |     |          |
+| b    |              |     |          |
+| c    |              |     |          |
 
 #### Argumentatie en alternatieven tabel
 
