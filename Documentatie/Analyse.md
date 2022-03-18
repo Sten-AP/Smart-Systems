@@ -1,16 +1,18 @@
 # Hardware analyse
+======
 #### Sten Hulsbergen
 #### 2ITIOT
 
 ### Probleemstelling
-
+=====
 
 
 ### Mindmap
-
+=====
 
 
 ### Hardware analyse
+=====
 #### Hardware blokdiagram
 
 
@@ -22,10 +24,12 @@
 
 
 ### Software analyse
+=====
 #### Data In -en Outputs
 
 
 #### State diagram
+=====
 
 
 #### Flowchart
