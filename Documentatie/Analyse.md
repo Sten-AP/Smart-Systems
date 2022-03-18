@@ -1,5 +1,5 @@
 # Hardware analyse
-Sten Hulsbergen *same paragraph*
+Sten Hulsbergen *separate paragraph*
 2ITIOT *separate paragraph*
 
 ### Probleemstelling
