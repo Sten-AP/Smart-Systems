@@ -11,7 +11,7 @@ Als laatste moet de wagen manueel als ook automatisch bestuurd kunnen worden.
 
 ## Mindmap
 
-![Mind map](Mind_map.svg)
+![](Mind_map.svg)
 
 ## Hardware analyse
 ### Hardware blokdiagram
