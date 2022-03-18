@@ -5,7 +5,10 @@
 ------
 ### Probleemstelling
 ------
-
+Het grootste probleem wat er is, is dat er een volledig nieuwe wagen ontworpen moet worden. 
+Deze moet twee UART connectoren bevatten, drie I2C connectoren, de regelaar 7805 vervangen door een LDL1117, polariteitsbeveiliging voorzien, motordriver aanpassen naar een SMD-type en een OLED-scherm met I2C sturing. 
+Naast de sturing moeten een aantal sensoren voorzien worden, een linetracker, IR- of ultrasone afstandssensoren,... Ook moeten er verkeerssignalisaties ontwikkeld moeten worden zoals verkeerslichten, slagbomen,... 
+Als laatste moet de wagen manueel als automatisch bestuurd kunnen worden.
 
 ### Mindmap
 ------
