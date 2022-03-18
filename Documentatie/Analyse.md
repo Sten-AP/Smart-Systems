@@ -2,12 +2,14 @@
 ------
 #### Sten Hulsbergen
 #### 2ITIOT
+------
 --
 
-------
 ### Probleemstelling
 ------
 
+
+--
 
 ### Mindmap
 ------
@@ -29,6 +31,7 @@
 #### Argumentatie en alternatieven tabel
 
 
+--
 
 ### Software analyse
 ------
@@ -48,6 +51,8 @@
 
 #### Mockup (Indien GUI)
 
+
+--
 
 ### Release plan
 ------
