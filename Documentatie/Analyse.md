@@ -1,6 +1,6 @@
 # Hardware analyse
-Sten Hulsbergen *separate paragraph*
-2ITIOT *separate paragraph*
+Sten Hulsbergen
+2ITIOT
 
 ### Probleemstelling
 ------
