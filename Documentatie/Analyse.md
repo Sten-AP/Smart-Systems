@@ -4,15 +4,15 @@
 #### 2ITIOT
 
 ### Probleemstelling
-=====
+======
 
 
 ### Mindmap
-=====
+======
 
 
 ### Hardware analyse
-=====
+======
 #### Hardware blokdiagram
 
 
@@ -24,12 +24,12 @@
 
 
 ### Software analyse
-=====
+======
 #### Data In -en Outputs
 
 
 #### State diagram
-=====
+======
 
 
 #### Flowchart
@@ -40,3 +40,4 @@
 
 
 ### Release plan
+======
