@@ -10,7 +10,7 @@
 ### Mindmap
 ------
 ![Mind map](https://user-images.githubusercontent.com/94611203/158987616-bdd657eb-4a7b-45aa-b957-adb5875e1223.png)
-
+/n
 ### Hardware analyse
 ------
 #### Hardware blokdiagram
