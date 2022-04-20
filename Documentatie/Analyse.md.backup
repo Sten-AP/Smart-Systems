@@ -1,4 +1,4 @@
-# Hardware analyse
+# Analyse
 Sten Hulsbergen<br/>
 2ITIOT<br/>
 
