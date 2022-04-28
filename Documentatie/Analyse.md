@@ -54,17 +54,6 @@ Als laatste moet de wagen manueel alsook automatisch bestuurd kunnen worden.
 | HC-SR04 | Deze ultrasone sensor is beschikbaar in grote hoeveelheden op school en is vrij makkelijk om mee te werken. |  |
 | TC78H621FNG | Deze motor driver is gekozen omdat het SMD component is. De driver heeft twee inputs en outputs, dit maakt het makkelijker om te ontwerpen aangezien het een enkele component is en geen twee. | Twee motor drivers LA6583MC-AH |
 
-
-## Software analyse
-### Data In -en Outputs
-| Blok | Data In | Data Out |
-|:----:|:-------:|:--------:|
-| IR-sensor |  |  |
-| Linetracker |  |  |
-| Ultrasoonsensor |  |  |
-
-### State diagram
-
 ### Elektrisch schema
 ## Sturingsschakeling
 ![](SturingsschakelingSCHEMA.png)
@@ -79,12 +68,22 @@ Als laatste moet de wagen manueel alsook automatisch bestuurd kunnen worden.
 ## Sensorschakeling
 ![](SensorschakelingPCB.png)
 
+## Software analyse
+### Data In -en Outputs
+| Blok | Data In | Data Out |
+|:----:|:-------:|:--------:|
+| IR-sensor | Digitaal IR aanzetten | Analoge spanningswaarde |
+| Linetracker | Digitaal | Analoog |
+| Ultrasoonsensor | Digitaal | Analoog |
+| OLED | I2C | I2C |
+
+### State diagram
+
+
 ### Flowchart
 
 
-
 ### Mockup (Indien GUI)
-
 
 
 ## Release plan
