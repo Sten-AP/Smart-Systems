@@ -50,40 +50,41 @@ Als laatste moet de wagen manueel alsook automatisch bestuurd kunnen worden.
 |:------:|:-----------------:|:-----:|
 | ESP32 Wrover | De Wrover wordt rechtstreeks geplaatst op de PCB, dit maakt de gehele PCB goedkoper aangezien de ESP32 zelf ontworpen word met alleen alle benodigheden van de schakeling. |  |
 | MJKDZ MIR-3.0Y | Om de wagen steeds recht te kunnen laten rijden en de baan zelfstandig te laten volgen, moeten we steeds kunnen weten waar de weg zich bevind. |  |
-| GP2Y0A21YK0F | Deze IR-sensor is beschikbaar in grote hoeveelheden op school en is vrij makkelijk om mee te werken. | GP2Y0A41SK0F |
-| HC-SR04 | Deze ultrasone sensor is beschikbaar in grote hoeveelheden op school en is vrij makkelijk om mee te werken. |  |
+| GP2Y0A21YK0F | Deze IR-sensor is beschikbaar in grote hoeveelheden op school en is vrij makkelijk om mee te werken. Dient om de afstand naar een bepaald object te meten op kortere afstanden. | GP2Y0A41SK0F |
+| HC-SR04 | Deze ultrasone sensor is beschikbaar in grote hoeveelheden op school en is vrij makkelijk om mee te werken. Dient om de afstand naar een bepaald object te meten op langere afstanden. |  |
 | TC78H621FNG | Deze motor driver is gekozen omdat het SMD component is. De driver heeft twee inputs en outputs, dit maakt het makkelijker om te ontwerpen aangezien het een enkele component is en geen twee. | Twee motor drivers LA6583MC-AH |
 
 ### Elektrisch schema
-## Sturingsschakeling
+#### Sturingsschakeling
 ![](SturingsschakelingSCHEMA.png)
 
-## Sensorschakeling
+#### Sensorschakeling
 ![](SensorschakelingSCHEMA.png)
 
 ### PCB ontwerp
-## Sturingsschakeling
+#### Sturingsschakeling
 ![](SturingsschakelingPCB.png)
 
-## Sensorschakeling
+#### Sensorschakeling
 ![](SensorschakelingPCB.png)
 
 ## Software analyse
 ### Data In -en Outputs
 | Blok | Data In | Data Out |
 |:----:|:-------:|:--------:|
-| IR-sensor | Digitaal IR aanzetten | Analoge spanningswaarde |
-| Linetracker | Digitaal | Analoog |
-| Ultrasoonsensor | Digitaal | Analoog |
+| IR-sensor | Digitaal IR aanzetten | Analoge spanningswaarde van ontvanger |
+| Linetracker | Digitaal IR aanzetten | Analoge spanningswaarde van elke ontvanger |
+| Ultrasoonsensor | Digitaal puls versturen | Digitaal puls ontvangen |
 | OLED | I2C | I2C |
-
+| Motor driver | Analoog PWM signaal | versterkt PWM signaal |
 ### State diagram
+#### Manueel
+![](Manueel.svg)
 
+#### Automatisch
+![](Automatisch.svg)
 
 ### Flowchart
-
-
-### Mockup (Indien GUI)
 
 
 ## Release plan
