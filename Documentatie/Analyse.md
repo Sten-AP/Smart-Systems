@@ -9,11 +9,11 @@ Deze moet twee UART connectoren bevatten, drie I2C connectoren, de regelaar 7805
 
 ## Mindmap
 
-![](Mind_map.svg)
+![](Foto's en etc\Mind_map.svg)
 
 ## Hardware analyse
 ### Hardware blokdiagram
-![](Blokdiagram.svg)
+![](Foto's en etc\Blokdiagram.svg)
 
 ### Specificatie tabel
 | Blok | Specificatie | Min | Nominaal | Max |
@@ -54,10 +54,10 @@ Deze moet twee UART connectoren bevatten, drie I2C connectoren, de regelaar 7805
 
 ### Elektrisch schema
 #### Sturingsschakeling
-![](SturingsschakelingSCHEMA.png)
+![](Foto's en etc\SturingsschakelingSCHEMA.png)
 
 #### Sensorschakeling
-![](SensorschakelingSCHEMA.png)
+![](Foto's en etc\SensorschakelingSCHEMA.png)
 
 ### PCB ontwerp
 #### Sturingsschakeling
