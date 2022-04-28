@@ -97,7 +97,7 @@ Als laatste moet de wagen manueel alsook automatisch bestuurd kunnen worden.
 6. Geheel testen
 
 ### Stories
-1. Analyse
+#### 1. Analyse
 * Probleemstelling
 * Mindmap
 * Hardware analyse
@@ -115,7 +115,7 @@ Als laatste moet de wagen manueel alsook automatisch bestuurd kunnen worden.
 	* Flowchart
 * Release plan
 
-2. PCB's ontwerpen
+#### 2. PCB's ontwerpen
 * Sturingsschakeling
 	* ESP32 Wrover
 	* 2x UART
@@ -133,21 +133,21 @@ Als laatste moet de wagen manueel alsook automatisch bestuurd kunnen worden.
 	* Linetracker
 	* Montagegaten
 
-3. Software ontwikkelen
+#### 3. Software ontwikkelen
 * Manueel besturen
 * Automatisch rijden
 * Patroon volgen
 
-4. Hardware opbouwen
+#### 4. Hardware opbouwen
 * Sturingsschakeling solderen
 * Sensorschakeling solderen
 * Robotwagen opbouwen
 
-5. Software implementeren
+#### 5. Software implementeren
 * ESP32 Wrover programmeren
 * Atmega328p programmeren
 
-6. Geheel testen
+#### 6. Geheel testen
 * Componenten
 * Data in & out
 * Modussen
