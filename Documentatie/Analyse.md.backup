@@ -31,7 +31,7 @@ Als laatste moet de wagen manueel alsook automatisch bestuurd kunnen worden.
 |  | Stroom | 500mA |  |  |
 | ESP32 Wrover | Spanning | 2.7V | 3.3V | 3.6V |
 |  | Stroom |  |  | 200mA |
-| ATmega328p | Spanning | 1.8V | 5V | 5.5V |
+| Atmega328p | Spanning | 1.8V | 5V | 5.5V |
 |  | Stroom |  |  | 200mA |
 | MJKDZ MIR-3.0Y | Spanning | 3 |  | 5 |
 |  | Bereik |  | 40mm |  |
@@ -88,6 +88,73 @@ Als laatste moet de wagen manueel alsook automatisch bestuurd kunnen worden.
 
 
 ## Release plan
+### Epics
+1. Analyse
+2. PCB's ontwerpen
+3. Software ontwikkelen
+4. Hardware opbouwen
+5. Software implementeren
+6. Geheel testen
 
+### Stories
+1. Analyse
+* Probleemstelling
+* Mindmap
+* Hardware analyse
+	* Hardware blokdiaram
+	* Specificatie tabel
+	* Argumentatie en alternatieven tabel
+	* Elektrisch schema
+		* Sturingsschakeling
+		* Sensorschakeling
+* Software analyse
+	* Data in- en outputs
+	* State diagram
+		* Manueel
+		* Automatisch
+	* Flowchart
+* Release plan
 
+2. PCB's ontwerpen
+* Sturingsschakeling
+	* ESP32 Wrover
+	* 2x UART
+	* 3x I2C
+	* 5V en 3.3V spanningsregelaars
+	* Polariteitsbeveiliging
+	* SMD Motor driver
+	* OLED met I2C
+	* Batterij aansluiting
+	* Montagegaten
+* Sensor schakeling
+	* Atmega328P
+	* Ultrasone sensor
+	* IR-sensor
+	* Linetracker
+	* Montagegaten
 
+3. Software ontwikkelen
+* Manueel besturen
+* Automatisch rijden
+* Patroon volgen
+
+4. Hardware opbouwen
+* Sturingsschakeling solderen
+* Sensorschakeling solderen
+* Robotwagen opbouwen
+
+5. Software implementeren
+* ESP32 Wrover programmeren
+* Atmega328p programmeren
+
+6. Geheel testen
+* Componenten
+* Data in & out
+* Modussen
+* 
+### Sprints
+* Analyse
+* PCB's ontwerpen
+* Internationaal week Brugge
+* Software ontwikkelen en hardware opbouwen
+*  & Software implementatie & Test
