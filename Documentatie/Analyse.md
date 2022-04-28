@@ -21,14 +21,16 @@ Als laatste moet de wagen manueel alsook automatisch bestuurd kunnen worden.
 | Blok | Specificatie | Min | Nominaal | Max |
 |:------:|:-----------------:|:-----:|:--------------:|:------:|
 | Batterij | Spanning |  | 7.4V |  |
-|  | Stroom |  | 500mA | 2A |
+|  | Stroom | 700mA |  | 2A |
 |  | Capaciteit |  | 1200mAh |  |
-| TC78H621FNG(O,EL) | Spanning | 2.5V | 5V | 15V |
+| TC78H621FNG | Spanning | 2.5V | 5V | 15V |
 |  | Stroom |  | 0.8A | 1.1A |
 | LDL1117S50R | Spanning |  | 5V |  |
 |  | Stroom |  | 2A |  |
 | LDL1117S33R | Spanning |  | 3.3V |  |
-|  | Stroom |  | 2A |  |
+|  | Stroom | 500mA |  |  |
+| ESP32 Wrover | Spanning | 2.7V | 3.3V | 3.6V |
+|  | Stroom |  |  | 200mA |
 | ATmega328p | Spanning | 1.8V | 5V | 5.5V |
 |  | Stroom |  |  | 200mA |
 | MJKDZ MIR-3.0Y | Spanning | 3 |  | 5 |
@@ -44,14 +46,22 @@ Als laatste moet de wagen manueel alsook automatisch bestuurd kunnen worden.
 
 ### Argumentatie en alternatieven tabel
 
+| Blok | Argumentatie | Alternatieven |
+|:------:|:-----------------:|:-----:|
+| ESP32 Wrover | De ESP32 dev kit bevat een interne regelaar die de 5V van de LDL1117 regelaar omzet naar 3.3V. Hiermee sparen we een extra LDL1117 uit. |  |
+| MJKDZ MIR-3.0Y |  |  |
+| GP2Y0A21YK0F | Er is gekozen voor de 2y0a21 omdat er hier verschillende van aanwezig zijn in het labo en deze niet moeten besteld worden. Een alternatief zou de short range versie zijn maar zoals de naam het al zegt kan deze niet zo ver meten (max 30cm). |  |
+| HC-SR04 | Er wordt gekozen voor de hc sr04 omdat deze tijdens de lessen arduino programming al aan bod is gekomen en deze op school al aanwezig is. |  |
+| TC78H621FNG | Er is voor deze motor driver gekozen omdat dit een SMD component is die relatief goedkoop is. Het nadeel is dat deze maar één motor kan aansturen en er hier dus twee van nodig zijn om de robot car te laten rijden. | Twee motor drivers LA6583MC-AH |
+
 
 ## Software analyse
 ### Data In -en Outputs
 | Blok | Data In | Data Out |
 |:----:|:-------:|:--------:|
-| IR-sensor |         |          |
-| Linetracker |         |          |
-| Ultrasoonsensor |         |          |
+| IR-sensor |  |  |
+| Linetracker |  |  |
+| Ultrasoonsensor |  |  |
 
 ### State diagram
 
