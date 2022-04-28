@@ -52,7 +52,7 @@ Als laatste moet de wagen manueel alsook automatisch bestuurd kunnen worden.
 | MJKDZ MIR-3.0Y | Om de wagen steeds recht te kunnen laten rijden en de baan zelfstandig te laten volgen, moeten we steeds kunnen weten waar de weg zich bevind. |  |
 | GP2Y0A21YK0F | Deze IR-sensor is beschikbaar in grote hoeveelheden op school en is vrij makkelijk om mee te werken. | GP2Y0A41SK0F |
 | HC-SR04 | Deze ultrasone sensor is beschikbaar in grote hoeveelheden op school en is vrij makkelijk om mee te werken. |  |
-| TC78H621FNG | Er is voor deze motor driver gekozen omdat dit een SMD component is die relatief goedkoop is. Het nadeel is dat deze maar één motor kan aansturen en er hier dus twee van nodig zijn om de robot car te laten rijden. | Twee motor drivers LA6583MC-AH |
+| TC78H621FNG | Deze motor driver is gekozen omdat het SMD component is. De driver heeft twee inputs en outputs, dit maakt het makkelijker om te ontwerpen aangezien het een enkele component is en geen twee. | Twee motor drivers LA6583MC-AH |
 
 
 ## Software analyse
@@ -65,6 +65,19 @@ Als laatste moet de wagen manueel alsook automatisch bestuurd kunnen worden.
 
 ### State diagram
 
+### Elektrisch schema
+## Sturingsschakeling
+![](SturingsschakelingSCHEMA.png)
+
+## Sensorschakeling
+![](SensorschakelingSCHEMA.png)
+
+### PCB ontwerp
+## Sturingsschakeling
+![](SturingsschakelingPCB.png)
+
+## Sensorschakeling
+![](SensorschakelingPCB.png)
 
 ### Flowchart
 
