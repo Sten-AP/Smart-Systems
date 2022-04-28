@@ -6,8 +6,8 @@ Sten Hulsbergen<br/>
 
 Het grootste probleem wat er is, is dat er een volledig nieuwe wagen ontworpen moet worden. 
 Deze moet twee UART connectoren bevatten, drie I2C connectoren, de regelaar 7805 vervangen door een LDL1117 van 3.3V en 5V, polariteitsbeveiliging voorzien, motordriver aanpassen naar een SMD-type en een OLED-scherm met I2C sturing. 
-Naast de sturing moeten een aantal sensoren voorzien worden, een linetracker, IR- of ultrasone afstandssensoren,... Ook zullen er verkeerssignalisaties ontwikkeld moeten worden zoals verkeerslichten, slagbomen,... 
-Als laatste moet de wagen manueel als ook automatisch bestuurd kunnen worden.
+Naast de sturing moeten een aantal sensoren voorzien worden, een linetracker, IR- en ultrasone afstandssensoren. Ook zullen er verkeerssignalisaties ontwikkeld moeten worden zoals verkeerslichten, slagbomen,... 
+Als laatste moet de wagen manueel alsook automatisch bestuurd kunnen worden.
 
 ## Mindmap
 
@@ -20,11 +20,27 @@ Als laatste moet de wagen manueel als ook automatisch bestuurd kunnen worden.
 ### Specificatie tabel
 | Blok | Specificatie | Min | Nominaal | Max |
 |:------:|:-----------------:|:-----:|:--------------:|:------:|
-| Batterij | Stroom |   | 500mA | 2A |
-|   | Capaciteit |   | 2700mAh |   |
-| LA6583MC-AH |              |     |          |
-| LDL1117 | Spanning |1.2V |   | 5V |
-|                | Stroom |   | 1.2A |   |
+| Batterij | Spanning |  | 7.4V |  |
+|  | Stroom |  | 500mA | 2A |
+|  | Capaciteit |  | 1200mAh |  |
+| TC78H621FNG(O,EL) | Spanning | 2.5V | 5V | 15V |
+|  | Stroom |  | 0.8A | 1.1A |
+| LDL1117S50R | Spanning |  | 5V |  |
+|  | Stroom |  | 2A |  |
+| LDL1117S33R | Spanning |  | 3.3V |  |
+|  | Stroom |  | 2A |  |
+| ATmega328p | Spanning | 1.8V | 5V | 5.5V |
+|  | Stroom |  |  | 200mA |
+| MJKDZ MIR-3.0Y | Spanning | 3 |  | 5 |
+|  | Bereik |  | 40mm |  |
+| GP2Y0A21YK0F | Spanning | 4.5V | 5V | 5.5V |
+|  | Stroom |  | 30mA |  |
+| HC-SR04 | Spanning |  | 5 V |  |
+|  | Stroom | 2mA |  | 15mA |
+| SSD1306 | Spanning | 3.3V |  | 5V |
+| CP2102N-A02-GQFN28R | Spanning | 3V | 3.3V | 3.6V |
+| USB4085-GF-A | Spanning |  | 5V |  |
+|  | Stroom |  | 3A |  |
 
 ### Argumentatie en alternatieven tabel
 
