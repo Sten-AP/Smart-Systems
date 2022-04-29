@@ -109,6 +109,9 @@ Deze moet twee UART connectoren bevatten, drie I2C connectoren, de regelaar 7805
 	* Elektrisch schema
 		* Sturingsschakeling
 		* Sensorschakeling
+	* PCB ontwerp
+		* Sturingsschakeling
+		* Sensorschakeling
 * Software analyse
 	* Data in- en outputs
 	* State diagram
