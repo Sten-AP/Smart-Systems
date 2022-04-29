@@ -31,7 +31,7 @@ Deze moet twee UART connectoren bevatten, drie I2C connectoren, de regelaar 7805
 |  | Stroom |  |  | 200mA |
 | Atmega328p | Spanning | 1.8V | 5V | 5.5V |
 |  | Stroom |  |  | 200mA |
-| MJKDZ MIR-3.0Y | Spanning | 3 |  | 5 |
+| MJKDZ MIR-3.0Y | Spanning | 3V |  | 5V |
 |  | Bereik |  | 40mm |  |
 | GP2Y0A21YK0F | Spanning | 4.5V | 5V | 5.5V |
 |  | Stroom |  | 30mA |  |
@@ -67,8 +67,8 @@ Deze moet twee UART connectoren bevatten, drie I2C connectoren, de regelaar 7805
 ![](SensorschakelingPCB.png)
 
 ## Software analyse
-### Data In -en Outputs
-| Blok | Data In | Data Out |
+### Data in- en outputs
+| Blok | Data in | Data out |
 |:----:|:-------:|:--------:|
 | IR-sensor | Digitaal IR aanzetten | Analoge spanningswaarde van ontvanger |
 | Linetracker | Digitaal IR aanzetten | Analoge spanningswaarde van elke ontvanger |

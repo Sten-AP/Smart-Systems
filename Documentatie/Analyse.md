@@ -73,8 +73,8 @@ Deze moet twee UART connectoren bevatten, drie I2C connectoren, de regelaar 7805
 | IR-sensor | Digitaal IR aanzetten | Analoge spanningswaarde van ontvanger |
 | Linetracker | Digitaal IR aanzetten | Analoge spanningswaarde van elke ontvanger |
 | Ultrasoonsensor | Digitaal puls versturen | Digitaal puls ontvangen |
-| OLED | I2C | I2C |
-| Motor driver | Analoog PWM signaal | versterkt PWM signaal |
+| OLED | I2C | n.v.t. |
+| Motor driver | Analoog PWM signaal | Versterkt PWM signaal |
 ### State diagram
 #### Manueel
 ![](Manueel.svg)
