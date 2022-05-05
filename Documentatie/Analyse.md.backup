@@ -52,19 +52,6 @@ Deze moet twee UART connectoren bevatten, drie I2C connectoren, de regelaar 7805
 | HC-SR04 | Deze ultrasone sensor is beschikbaar in grote hoeveelheden op school en is vrij makkelijk om mee te werken. Dient om de afstand naar een bepaald object te meten op langere afstanden. |  |
 | TC78H621FNG | Deze motor driver is gekozen omdat het SMD component is. De driver heeft twee inputs en outputs, dit maakt het makkelijker om te ontwerpen aangezien het een enkele component is en geen twee. | Twee motor drivers LA6583MC-AH |
 
-### Elektrisch schema
-#### Sturingsschakeling
-![](SturingsschakelingSCHEMA.png)
-
-#### Sensorschakeling
-![](SensorschakelingSCHEMA.png)
-
-### PCB ontwerp
-#### Sturingsschakeling
-![](SturingsschakelingPCB.png)
-
-#### Sensorschakeling
-![](SensorschakelingPCB.png)
 
 ## Software analyse
 ### Data in- en outputs
@@ -73,8 +60,8 @@ Deze moet twee UART connectoren bevatten, drie I2C connectoren, de regelaar 7805
 | IR-sensor | Digitaal IR aanzetten | Analoge spanningswaarde van ontvanger |
 | Linetracker | Digitaal IR aanzetten | Analoge spanningswaarde van elke ontvanger |
 | Ultrasoonsensor | Digitaal puls versturen | Digitaal puls ontvangen |
-| OLED | I2C | I2C |
-| Motor driver | Analoog PWM signaal | versterkt PWM signaal |
+| OLED | I2C | n.v.t. |
+| Motor driver | Analoog PWM signaal | Versterkt PWM signaal |
 ### State diagram
 #### Manueel
 ![](Manueel.svg)
@@ -82,7 +69,7 @@ Deze moet twee UART connectoren bevatten, drie I2C connectoren, de regelaar 7805
 #### Automatisch
 ![](Automatisch.svg)
 
-#### Patroon
+#### Parkoer
 ![](Patroon.svg)
 
 ### Flowchart
