@@ -55,8 +55,6 @@ int LCD_COLUMNS = 16;
 int LCD_ROWS = 2;
 LiquidCrystal_I2C lcd(0x27, LCD_COLUMNS, LCD_ROWS);
 
-<<<<<<< Updated upstream
-=======
 char keuzeMenu;
 char keuzeHandmatig;
 int drivingSpeed = 200; // default 128
@@ -140,7 +138,6 @@ void reconnect()
   }
 }
 
->>>>>>> Stashed changes
 enum COMMANDS {
   LEFT_TURN_FORWARD,      // 0
   FORWARD,                // 1
@@ -165,37 +162,19 @@ enum MOTOR_DIRECTION {
 };
 
 enum MENUKEUZE {
-<<<<<<< Updated upstream
   AUTOMATISCH,
   HANDMATIG,
-  PARKOER
-};
-
-enum HANDMATIG {
-  LINKS,
-  RECHTDOOR,
-  RECHTS,
-  ACHTERUIT
-=======
-  AUTOMATISCH = '8',
-  HANDMATIG = '9'
-};
+}
 
 enum HANDMATIG {
   LINKS = '0',
   RECHTDOOR = '1',
   RECHTS = '2',
   ACHTERUIT = '3'
->>>>>>> Stashed changes
 };
 
 int command, lastCommand;
-
-<<<<<<< Updated upstream
-int drivingSpeed = 128; // default 128
-=======
 int ledLinks, ledMidden, ledRechts;
->>>>>>> Stashed changes
 
 void setup() {
   Serial.begin(115200);
@@ -221,17 +200,6 @@ void setup() {
   // lcd init 
   lcd.init();
   lcd.backlight();
-<<<<<<< Updated upstream
-}
-
-void loop() {
-  switch (keuzeMenu) {
-    // Automatisch rijden van de wagen
-    case AUTOMATISCH:
-      int ledLinks = analogRead(linetrackerLed[0]);
-      int ledMidden = analogRead(linetrackerLed[1]);
-      int ledRechts = analogRead(linetrackerLed[2]);
-=======
 
   setup_wifi();
 
@@ -252,7 +220,6 @@ void loop() {
       ledLinks = analogRead(linetrackerLed[0]);
       ledMidden = analogRead(linetrackerLed[1]);
       ledRechts = analogRead(linetrackerLed[2]);
->>>>>>> Stashed changes
 
       Serial.println(String(ledLinks) + " - " + String(ledMidden) + " - " + String(ledRechts));
 
@@ -281,15 +248,9 @@ void loop() {
           default:
             command = STOP;
             break;
-        }
-      break;
-<<<<<<< Updated upstream
+          }
+        break;
     // Voorgeprogrammeerd parkoer      
-    case PARKOER:
-      // ...
-      break;
-=======
->>>>>>> Stashed changes
     default:
       break;
   }
@@ -307,7 +268,6 @@ void loop() {
         delay(2000);
         break;
       case RIGHT: // Turn right around center point chassis
-<<<<<<< Updated upstream
         driveMotors(MOTOR_BACKWARDS, drivingSpeed, MOTOR_FORWARD, drivingSpeed);
 =======
         driveMotors(MOTOR_BACKWARDS, drivingSpeed/2, MOTOR_FORWARD, drivingSpeed/2);
