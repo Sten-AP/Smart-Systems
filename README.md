@@ -7,7 +7,7 @@ Sten Hulsbergen<br/>
 
 ### Korte beschrijving van het project
 
-Het project is het ontwerpen van een smart car. Deze moest twee UART connectoren bevatten, drie I2C connectoren, de regelaar 7805 vervangen door een LDL1117 van 3.3V en 5V, polariteitsbeveiliging voorzien, motordriver aanpassen naar een SMD-type en een OLED-scherm met I2C sturing. Naast de sturing moesten een aantal sensoren voorzien worden, een linetracker, IR- en ultrasone afstandssensoren. Ook zullen er verkeerssignalisaties ontwikkeld moeten worden zoals verkeerslichten, slagbomen,... Als laatste moet de wagen manueel alsook automatisch bestuurd kunnen worden en een patroon kunnen rijden.
+Het project is het ontwerpen van een smart car. De PCB's worden individueel gemaakt en de auto moet automatisch alsook manueel bestuurbaar kunnen zijn met embedded software.
 
 #### Wat is het doel van het project?
 
@@ -22,28 +22,37 @@ Het doel is om een analyse te maken en met deze analyse het project op te bouwen
 5. Software geschreven
 6. Wagen getest
 
-##### Sturingschakeling
+### Toelichten van het finale ontwerp van het project:
+#### Wat waren de vereisten van het project?
+
+De auto moest twee UART connectoren bevatten, drie I2C connectoren, de regelaar 7805 vervangen door een LDL1117 van 3.3V en 5V, polariteitsbeveiliging voorzien, motordriver aanpassen naar een SMD-type en een OLED-scherm met I2C sturing. Naast de sturing moesten een aantal sensoren voorzien worden, een linetracker, IR- en ultrasone afstandssensoren. Ook zullen er verkeerssignalisaties ontwikkeld moeten worden zoals verkeerslichten, slagbomen,... Als laatste moet de wagen manueel alsook automatisch bestuurd kunnen worden en een patroon kunnen rijden.
+
+#### Toevoegen van het effectieve ontwerp:
+##### PCB Design
+###### Sturingschakeling
 
 ![](IMG20220616155816.jpg)
 
-##### Sensorschakeling
+###### Sensorschakeling
 
 ![](IMG20220616155801_01.jpg)
 
-
-### Toelichten van het finale ontwerp van het project:
-#### Wat waren de vereisten van het project?
-#### Toevoegen van het effectieve ontwerp:
-##### PCB Design (met uitleg en redenering)
 ##### Flowcharts
+
 ##### Statediagrammen
+
 ##### Andere relevante ontwerpbestanden/documenten/diagrammen.
+
 ### Documentatie voor het:
-#### Installeren van de nodige software 
+#### Installeren van de nodige software
+
 #### Programmeren van controllers
+
 #### Extra documentatie van de software 
+
 #### Testen en resultaten 
 
+De tests zijn niet gedaan met de eigen ontworpen PCB's maar met de oude. Dit was nodig om de software toch een kans te kunnen geven en daar aan te kunnen werken. Deze software bevat een Node-RED en hiermee kan de auto succesvol automatisch rijden en manueel bestuurd worden.
 
 
 
