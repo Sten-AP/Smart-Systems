@@ -68,8 +68,6 @@ Ik heb geleerd dat een analyse zeer belangrijk is in een project aangezien dit d
 - Solderen
 - Werken met ESP32
 - Node-RED
-- Een goede analyse is zeer belangrijk
-- Componenten zo vroeg mogelijk bestellen zodat ze zeker op tijd aankomen
 
 #### Verbeteringen 
 
