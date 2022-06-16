@@ -2,8 +2,6 @@
 #include <WiFi.h>              // Standard ESP32 Library
 #include <PubSubClient.h>      // https://github.com/knolleary/pubsubclient (intall with library Manager)
 
-<<<<<<< Updated upstream
-=======
 #define sub1 "Motor"
 #define sub2 "KeuzeMenu"
 
@@ -21,7 +19,6 @@ unsigned long lastMsg = 0;
 char msg[MSG_BUFFER_SIZE];
 int value = 0;
 
->>>>>>> Stashed changes
 // PWM Settings - DO NOT CHANGE
 const int PWM_FREQUENCY = 500;
 const int PWM_RESOLUTION = 8;
@@ -55,8 +52,6 @@ int LCD_COLUMNS = 16;
 int LCD_ROWS = 2;
 LiquidCrystal_I2C lcd(0x27, LCD_COLUMNS, LCD_ROWS);
 
-<<<<<<< Updated upstream
-=======
 char keuzeMenu;
 char keuzeHandmatig;
 int drivingSpeed = 200; // default 128
@@ -112,7 +107,6 @@ void callback(char* topic, byte* payload, unsigned int length)
   }
 }
 
-
 void reconnect()
 {
   // Loop until we're reconnected
@@ -140,7 +134,6 @@ void reconnect()
   }
 }
 
->>>>>>> Stashed changes
 enum COMMANDS {
   LEFT_TURN_FORWARD,      // 0
   FORWARD,                // 1
@@ -165,18 +158,6 @@ enum MOTOR_DIRECTION {
 };
 
 enum MENUKEUZE {
-<<<<<<< Updated upstream
-  AUTOMATISCH,
-  HANDMATIG,
-  PARKOER
-};
-
-enum HANDMATIG {
-  LINKS,
-  RECHTDOOR,
-  RECHTS,
-  ACHTERUIT
-=======
   AUTOMATISCH = '8',
   HANDMATIG = '9'
 };
@@ -186,16 +167,10 @@ enum HANDMATIG {
   RECHTDOOR = '1',
   RECHTS = '2',
   ACHTERUIT = '3'
->>>>>>> Stashed changes
 };
 
 int command, lastCommand;
-
-<<<<<<< Updated upstream
-int drivingSpeed = 128; // default 128
-=======
 int ledLinks, ledMidden, ledRechts;
->>>>>>> Stashed changes
 
 void setup() {
   Serial.begin(115200);
@@ -221,17 +196,6 @@ void setup() {
   // lcd init 
   lcd.init();
   lcd.backlight();
-<<<<<<< Updated upstream
-}
-
-void loop() {
-  switch (keuzeMenu) {
-    // Automatisch rijden van de wagen
-    case AUTOMATISCH:
-      int ledLinks = analogRead(linetrackerLed[0]);
-      int ledMidden = analogRead(linetrackerLed[1]);
-      int ledRechts = analogRead(linetrackerLed[2]);
-=======
 
   setup_wifi();
 
@@ -252,7 +216,6 @@ void loop() {
       ledLinks = analogRead(linetrackerLed[0]);
       ledMidden = analogRead(linetrackerLed[1]);
       ledRechts = analogRead(linetrackerLed[2]);
->>>>>>> Stashed changes
 
       Serial.println(String(ledLinks) + " - " + String(ledMidden) + " - " + String(ledRechts));
 
@@ -265,31 +228,24 @@ void loop() {
       break;
     // Handmatig besturen van de wagen
     case HANDMATIG:
-        switch (keuzeHandmatig) {
-          case LINKS:
-            command = LEFT;
-            break;
-          case RECHTDOOR:
-            command = FORWARD;
-            break;
-          case RECHTS:
-            command = RIGHT;
-            break;
-          case ACHTERUIT:
-            command = BACKWARDS;
-            break;
-          default:
-            command = STOP;
-            break;
-        }
+      switch (keuzeHandmatig) {
+        case LINKS:
+          command = LEFT;
+          break;
+        case RECHTDOOR:
+          command = FORWARD;
+          break;
+        case RECHTS:
+          command = RIGHT;
+          break;
+        case ACHTERUIT:
+          command = BACKWARDS;
+          break;
+        default:
+          command = STOP;
+          break;
+      }
       break;
-<<<<<<< Updated upstream
-    // Voorgeprogrammeerd parkoer      
-    case PARKOER:
-      // ...
-      break;
-=======
->>>>>>> Stashed changes
     default:
       break;
   }
@@ -307,11 +263,7 @@ void loop() {
         delay(2000);
         break;
       case RIGHT: // Turn right around center point chassis
-<<<<<<< Updated upstream
-        driveMotors(MOTOR_BACKWARDS, drivingSpeed, MOTOR_FORWARD, drivingSpeed);
-=======
-        driveMotors(MOTOR_BACKWARDS, drivingSpeed/2, MOTOR_FORWARD, drivingSpeed/2);
->>>>>>> Stashed changes
+        driveMotors(MOTOR_BACKWARDS, drivingSpeed/4, MOTOR_FORWARD, drivingSpeed/4);
         break;
       case RIGHT_TURN_BACKWARDS: // Curved turn backwards to the right
         driveMotors(MOTOR_BACKWARDS, drivingSpeed/2, MOTOR_BACKWARDS, drivingSpeed);
@@ -323,11 +275,7 @@ void loop() {
         driveMotors(MOTOR_BACKWARDS, drivingSpeed, MOTOR_BACKWARDS, drivingSpeed/2);
         break;
       case LEFT: // Turn left around center point chassis
-<<<<<<< Updated upstream
-        driveMotors(MOTOR_FORWARD, drivingSpeed, MOTOR_BACKWARDS, drivingSpeed);
-=======
-        driveMotors(MOTOR_FORWARD, drivingSpeed/2, MOTOR_BACKWARDS, drivingSpeed/2);
->>>>>>> Stashed changes
+        driveMotors(MOTOR_FORWARD, drivingSpeed/4, MOTOR_BACKWARDS, drivingSpeed/4);
         break;
       case STOP: // Stop driving
         driveMotors(MOTOR_STOP, 0, MOTOR_STOP, 0);
