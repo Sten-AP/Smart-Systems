@@ -58,6 +58,19 @@ enum MOTOR_DIRECTION {
   MOTOR_FORWARD = 1
 };
 
+enum MENUKEUZE {
+  AUTOMATISCH,
+  HANDMATIG,
+  PARKOER
+};
+
+enum HANDMATIG {
+  LINKS,
+  RECHTDOOR,
+  RECHTS,
+  ACHTERUIT
+};
+
 int command, lastCommand;
 
 int drivingSpeed = 128; // default 128
@@ -89,18 +102,49 @@ void setup() {
 }
 
 void loop() {
-  int ledLinks = analogRead(linetrackerLed[0]);
-  int ledMidden = analogRead(linetrackerLed[1]);
-  int ledRechts = analogRead(linetrackerLed[2]);
+  switch (keuzeMenu) {
+    // Automatisch rijden van de wagen
+    case AUTOMATISCH:
+      int ledLinks = analogRead(linetrackerLed[0]);
+      int ledMidden = analogRead(linetrackerLed[1]);
+      int ledRechts = analogRead(linetrackerLed[2]);
 
-  Serial.println(String(ledLinks) + " - " + String(ledMidden) + " - " + String(ledRechts));
+      Serial.println(String(ledLinks) + " - " + String(ledMidden) + " - " + String(ledRechts));
 
-  if (ledLinks == 4095 && ledMidden == 4095 && ledRechts == 4095) command = LEFT;
-  else if (ledMidden == 4095) command = FORWARD;
-  else if (ledLinks == 4095) command = RIGHT;
-  else if (ledRechts == 4095) command = LEFT;
-  else if (ledMidden == 4095 && ledRechts == 4095) command = RIGHT;
-  else if (ledMidden == 4095 && ledLinks == 4095) command = LEFT;
+      if (ledLinks == 4095 && ledMidden == 4095 && ledRechts == 4095) command = LEFT;
+      else if (ledMidden == 4095) command = FORWARD;
+      else if (ledLinks == 4095) command = RIGHT;
+      else if (ledRechts == 4095) command = LEFT;
+      else if (ledMidden == 4095 && ledRechts == 4095) command = RIGHT;
+      else if (ledMidden == 4095 && ledLinks == 4095) command = LEFT;
+      break;
+    // Handmatig besturen van de wagen
+    case HANDMATIG:
+        switch (keuzeHandmatig) {
+          case LINKS:
+            command = LEFT;
+            break;
+          case RECHTDOOR:
+            command = FORWARD;
+            break;
+          case RECHTS:
+            command = RIGHT;
+            break;
+          case ACHTERUIT:
+            command = BACKWARDS;
+            break;
+          default:
+            command = STOP;
+            break;
+        }
+      break;
+    // Voorgeprogrammeerd parkoer      
+    case PARKOER:
+      // ...
+      break;
+    default:
+      break;
+  }
 
   if (lastCommand != command) {
     switch (command) {
