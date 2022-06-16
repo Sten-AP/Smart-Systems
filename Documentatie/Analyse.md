@@ -79,8 +79,6 @@ Deze moet twee UART connectoren bevatten, drie I2C connectoren, de regelaar 7805
 #### Flowchart manueel
 ![](Flowchart_manueel.svg)
 
-### Mock up
-
 ## Release plan
 ### Epics
 1. Analyse
