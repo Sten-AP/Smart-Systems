@@ -13,6 +13,7 @@ Deze moet twee UART connectoren bevatten, drie I2C connectoren, de regelaar 7805
 
 ## Hardware analyse
 ### Hardware blokdiagram
+
 ![](Blokdiagram.svg)
 
 ### Specificatie tabel
