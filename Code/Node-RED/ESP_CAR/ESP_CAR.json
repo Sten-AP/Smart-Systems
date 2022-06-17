@@ -1,0 +1,549 @@
+[
+    {
+        "id": "55651d3eef181029",
+        "type": "tab",
+        "label": "ESP32 Handmatig",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "7e09509f010f0c0d",
+        "type": "mqtt in",
+        "z": "55651d3eef181029",
+        "name": "",
+        "topic": "Motor",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "57d108505ff33dda",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 90,
+        "y": 200,
+        "wires": [
+            [
+                "84b9c036a6a8c450",
+                "72dd25928b752a94"
+            ]
+        ]
+    },
+    {
+        "id": "c694171613433cce",
+        "type": "mqtt out",
+        "z": "55651d3eef181029",
+        "name": "",
+        "topic": "Motor",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "57d108505ff33dda",
+        "x": 810,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "76b4c12156815380",
+        "type": "ui_button",
+        "z": "55651d3eef181029",
+        "name": "",
+        "group": "3eb2e90cf3f0e5ab",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "fa-arrow-left fa-4x",
+        "payload": "0",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 630,
+        "y": 200,
+        "wires": [
+            [
+                "c694171613433cce"
+            ]
+        ]
+    },
+    {
+        "id": "9f71bdbc780ba388",
+        "type": "ui_button",
+        "z": "55651d3eef181029",
+        "name": "",
+        "group": "ae9ff27c7a56ed23",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "fa-arrow-right fa-4x",
+        "payload": "2",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 630,
+        "y": 260,
+        "wires": [
+            [
+                "c694171613433cce"
+            ]
+        ]
+    },
+    {
+        "id": "5f8399b2c3cc8153",
+        "type": "ui_button",
+        "z": "55651d3eef181029",
+        "name": "",
+        "group": "d10e8c979ec7f759",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "fa-arrow-down fa-4x",
+        "payload": "3",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 630,
+        "y": 320,
+        "wires": [
+            [
+                "c694171613433cce"
+            ]
+        ]
+    },
+    {
+        "id": "84b9c036a6a8c450",
+        "type": "debug",
+        "z": "55651d3eef181029",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 270,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "2400667117c6a3ca",
+        "type": "ui_text",
+        "z": "55651d3eef181029",
+        "group": "42db9e126380ed3f",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Richting : ",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 460,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "063a7e57250bd01d",
+        "type": "ui_dropdown",
+        "z": "55651d3eef181029",
+        "name": "",
+        "label": "Keuze Menu",
+        "tooltip": "",
+        "place": "Select option",
+        "group": "54a4885625fcacbb",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "Automatisch",
+                "value": 8,
+                "type": "num"
+            },
+            {
+                "label": "Handmatig",
+                "value": 9,
+                "type": "num"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 650,
+        "y": 60,
+        "wires": [
+            [
+                "b5256a5c1d38e795"
+            ]
+        ]
+    },
+    {
+        "id": "b5256a5c1d38e795",
+        "type": "mqtt out",
+        "z": "55651d3eef181029",
+        "name": "",
+        "topic": "KeuzeMenu",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "57d108505ff33dda",
+        "x": 830,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "a704a2a1581e53c0",
+        "type": "mqtt in",
+        "z": "55651d3eef181029",
+        "name": "",
+        "topic": "KeuzeMenu",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "57d108505ff33dda",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 90,
+        "y": 80,
+        "wires": [
+            [
+                "651dc89fdf5f0375",
+                "81c95356939a76d9"
+            ]
+        ]
+    },
+    {
+        "id": "651dc89fdf5f0375",
+        "type": "debug",
+        "z": "55651d3eef181029",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 290,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "1c6808dd580b5244",
+        "type": "ui_text",
+        "z": "55651d3eef181029",
+        "group": "42db9e126380ed3f",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Mode : ",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 470,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "af443186d874b62b",
+        "type": "ui_button",
+        "z": "55651d3eef181029",
+        "name": "",
+        "group": "d10e8c979ec7f759",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "fa-stop fa-4x",
+        "payload": "5",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 630,
+        "y": 380,
+        "wires": [
+            [
+                "c694171613433cce"
+            ]
+        ]
+    },
+    {
+        "id": "66a596d9297469e4",
+        "type": "ui_button",
+        "z": "55651d3eef181029",
+        "name": "",
+        "group": "d10e8c979ec7f759",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "fa-arrow-up fa-4x",
+        "payload": "1",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 630,
+        "y": 140,
+        "wires": [
+            [
+                "c694171613433cce"
+            ]
+        ]
+    },
+    {
+        "id": "81c95356939a76d9",
+        "type": "change",
+        "z": "55651d3eef181029",
+        "name": "",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "9",
+                "fromt": "str",
+                "to": "Handmatig",
+                "tot": "str"
+            },
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "8",
+                "fromt": "str",
+                "to": "Automatisch",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 300,
+        "y": 140,
+        "wires": [
+            [
+                "1c6808dd580b5244"
+            ]
+        ]
+    },
+    {
+        "id": "72dd25928b752a94",
+        "type": "change",
+        "z": "55651d3eef181029",
+        "name": "",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "1",
+                "fromt": "str",
+                "to": "Voorwaarts",
+                "tot": "str"
+            },
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "0",
+                "fromt": "str",
+                "to": "Links",
+                "tot": "str"
+            },
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "3",
+                "fromt": "str",
+                "to": "Achteruit",
+                "tot": "str"
+            },
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "2",
+                "fromt": "str",
+                "to": "Rechts",
+                "tot": "str"
+            },
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "5",
+                "fromt": "str",
+                "to": "Stop",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 280,
+        "y": 260,
+        "wires": [
+            [
+                "2400667117c6a3ca"
+            ]
+        ]
+    },
+    {
+        "id": "e34bf417f3ec4fae",
+        "type": "ui_spacer",
+        "z": "55651d3eef181029",
+        "name": "spacer",
+        "group": "3eb2e90cf3f0e5ab",
+        "order": 1,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "0463734ba8582424",
+        "type": "ui_spacer",
+        "z": "55651d3eef181029",
+        "name": "spacer",
+        "group": "ae9ff27c7a56ed23",
+        "order": 1,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "57d108505ff33dda",
+        "type": "mqtt-broker",
+        "name": "mqtt.luytsm.be",
+        "broker": "mqtt.luytsm.be",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": ""
+    },
+    {
+        "id": "3eb2e90cf3f0e5ab",
+        "type": "ui_group",
+        "name": "",
+        "tab": "056121ec2706e0b2",
+        "order": 2,
+        "disp": false,
+        "width": 4,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "ae9ff27c7a56ed23",
+        "type": "ui_group",
+        "name": ">",
+        "tab": "056121ec2706e0b2",
+        "order": 4,
+        "disp": false,
+        "width": 4,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "d10e8c979ec7f759",
+        "type": "ui_group",
+        "name": "^",
+        "tab": "056121ec2706e0b2",
+        "order": 3,
+        "disp": false,
+        "width": 4,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "42db9e126380ed3f",
+        "type": "ui_group",
+        "name": "Group 8",
+        "tab": "056121ec2706e0b2",
+        "order": 5,
+        "disp": false,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "54a4885625fcacbb",
+        "type": "ui_group",
+        "name": "Group 5",
+        "tab": "056121ec2706e0b2",
+        "order": 1,
+        "disp": false,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "056121ec2706e0b2",
+        "type": "ui_tab",
+        "name": "ESP32 CAR",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    }
+]
