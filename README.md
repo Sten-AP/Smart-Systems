@@ -40,7 +40,7 @@ De auto moest twee UART connectoren bevatten, drie I2C connectoren, de regelaar 
 ### Extra documentatie van de software 
 De software is grotendeel opgebouwd uit enum's en switches. Dit maakt het makkelijk om duidelijke code te schrijven zonder dat deze moeilijk te lezen is door een andere persoon. De ESP32 maakt verbinding met het internet en dan de MQTT broker. Vervolgens initialiseerd de software allerlei nodige onderdelen zoals de serial monitor, etc in de setup. In de loop wordt steeds gekeken of de keuze in het menu op automatisch staat of op manueel. Als deze op automatisch staat, dan gebruikt de auto de linetracker en stuurd hij bepaalde commando's zoals links, rechts, voorwaards, etc. Als er gekozen was voor manueel, dan worden de waardes gebruikt die van de Node-RED besturing komen. Dit zijn knoppen om de gewenste richting ingeven. Om te wissel van modus kan dat via het dropdownmenu.
 
-#### Node-RED besturing
+### Node-RED besturing
 ![](node_red_besturing.jpg)
 
 ### Node-RED
