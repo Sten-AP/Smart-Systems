@@ -54,11 +54,11 @@ De software is grotendeel opgebouwd uit enum's en switches. Dit maakt het makkel
 
 ### Testen en resultaten 
 
-De tests zijn niet gedaan met de eigen ontworpen PCB's maar met de oude. Dit was nodig om de software toch een kans te kunnen geven en daar aan te kunnen werken. Deze software bevat een Node-RED en hiermee kan de auto succesvol automatisch rijden en manueel bestuurd worden. Er mist een deel van de software omdat de rest van de sensoren niet getest konden worden omdat er ook te weinig tijd was. Hiervan is een demo gemaakt om te laten zien tijdens de presentatie.
+De tests zijn niet gedaan met de eigen ontworpen PCB's maar met de oude. Dit was nodig om de software toch een kans te kunnen geven om daar aan te kunnen werken. Deze software bevat een Node-RED en hiermee kan de auto succesvol automatisch rijden en manueel bestuurd worden. Er mist een deel van de software omdat de rest van de sensoren niet getest konden worden omdat er ook te weinig tijd was. Hiervan is een demo gemaakt om te laten zien tijdens de presentatie.
 
 ### Conclusie
 
-Ik heb geleerd dat een analyse zeer belangrijk is in een project aangezien dit de basis is voor een project. Door op een goede manier alle componenten op te zoeken en de gegevens er van overnemen kan veel tijd bespaard worden later. In het begin moesten we allemaal apart werken aan ons project, later is gebleken dat dat niet echt kon en hielp iedereen elkaar als het kon. Het ontwerpen van de PCB's was niet makkelijk, zeker ook omdat het voelde alsof het uit het niks kwam. Door materiaaltekort en tijdsgebrek is het project niet helemaal afgeraakt. Ik heb geprobeerd om de ontworpen PCB's zo goed mogelijk te ontwerpen al waren er een aantal onderdelen zo goed als niet te doen zoals de USB-C connector. De software is niet ontworpen voor deze schakelingen maar werkt wel op de oude PCB. Op deze manier is er toch nog een rijdende auto voorzien.
+Ik heb geleerd dat een analyse zeer belangrijk is in een project aangezien dit de basis is voor een project. Door op een goede manier alle componenten op te zoeken en de gegevens er van over te nemen, kan veel tijd bespaard worden later. In het begin moesten we allemaal apart werken aan ons project, later is gebleken dat dat niet echt kon en hielp iedereen elkaar. Het ontwerpen van de PCB's was niet makkelijk, zeker ook omdat het voelde alsof het uit het niks kwam vanwege een slechte uitleg. Door materiaaltekort en tijdsgebrek is het project niet helemaal afgeraakt. Ik heb geprobeerd om de ontworpen PCB's zo goed mogelijk te ontwerpen al waren er een aantal onderdelen zo goed als niet te doen zoals de USB-C connector. De software is niet ontworpen voor deze schakelingen maar werkt wel op de oude PCB. Op deze manier is er toch nog een rijdende auto voorzien.
 
 ### Wat ik heb geleerd
 
@@ -71,6 +71,6 @@ Ik heb geleerd dat een analyse zeer belangrijk is in een project aangezien dit d
 
 ### Verbeteringen 
 
-Het aantal vias kan verminderd worden. Voor de pinnen die alleen langs de onderkant gesoldeerd kunnen worden de paden langs onder laten lopen.
+Het aantal vias kan verminderd worden. De headers kunnen alleen langs de onderkant gesoldeerd worden dus de paden langs onder laten lopen.
 
 Code ontbreekt voor de IR- en ultrasone sensor, alleen de ESP32 wordt gebruikt.
